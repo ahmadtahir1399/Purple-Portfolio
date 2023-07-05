@@ -1,0 +1,15 @@
+/*----------------------------------main-grid-explore-----------------------------------------------*/
+.main-grid-explore {
+  margin-bottom: 12rem;
+}
+.same-h1 {
+  font-weight: 900;
+  font-size: 6rem;
+}
+@media (max-width: 400px) {
+  .same-h1 {
+    font-weight: 900;
+    font-size: 2rem;
+    display: none;
+  }
+}

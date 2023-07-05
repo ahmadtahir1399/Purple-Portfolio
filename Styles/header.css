@@ -1,0 +1,211 @@
+/*--------------------------------------ALL-HEADER-SECTION-----------------------------------------*/
+/*----------------------------------------SECTION-1------------------------------------------------*/
+
+.main-1 {
+  margin-top: 10rem;
+}
+.section-1-text-heading::after {
+  content: ".";
+  color: var(--primary);
+  font-size: 100px;
+}
+.section-1-text-heading {
+  font-size: 8rem;
+  margin-bottom: 2rem;
+}
+.beginner-heading {
+  font-size: 4rem;
+  writing-mode: vertical-rl;
+}
+.side-text-h2::before {
+  content: ".";
+  color: var(--white);
+  font-size: 30px;
+  display: inline-block;
+}
+.side-text {
+  position: relative;
+}
+.side-text-h2 {
+  position: absolute;
+  top: -15rem;
+}
+/*--------------------------------------SECTION-IMG------------------------------------------------*/
+
+.section-2-main-img {
+  width: 46%;
+  height: auto;
+  right: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  top: -84px;
+  bottom: 0;
+}
+/* .circle {
+  width: 55%;
+  height: 75%;
+  background-color: #aa84f9;
+  border-radius: 50%;
+  position: absolute;
+  top: 3%;
+  bottom: 0;
+  right: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+} */
+.section-2-main-img {
+  position: relative;
+}
+
+.section-2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 53%; /* Adjust the size of the circle as needed */
+  height: 56%; /* Adjust the size of the circle as needed */
+  background-color: var(
+    --primary
+  ); /* Adjust the background color of the circle */
+  border-radius: 50%;
+  z-index: -1;
+}
+.section-2 {
+  position: relative;
+}
+.arrow-img-1 {
+  top: -120px;
+}
+.arrow-img-1 {
+  position: absolute;
+  top: -34px;
+  right: -70px;
+}
+.arrow-img-2 {
+  position: absolute;
+
+  top: 50px;
+  left: -23px;
+}
+/*----------------------------------------SECTION-3------------------------------------------------*/
+.main-oval {
+  margin-bottom: 2;
+}
+.EDITION-2022 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+.side-box-h1 {
+  border: 2px solid var(--white);
+  padding: 18px 20px;
+  border-right: none;
+  position: relative;
+}
+.side-box-h1::after,
+.side-box-h1::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -22%;
+  width: 22%;
+  height: 2px;
+  background-color: white;
+}
+.side-box-h1::before {
+  top: unset;
+  bottom: -2px;
+}
+.img-side-content {
+  margin-top: 5rem;
+}
+.content-h1 {
+  margin-bottom: 1rem;
+}
+.side-para {
+  width: 80%;
+  line-height: 17px;
+  margin-bottom: 2rem;
+  color: #f6f6f6;
+}
+.side-btn-1 {
+  padding: 1rem 1.5rem;
+}
+.btn-1:hover {
+  background-color: #ff9a8b;
+  background-image: linear-gradient(
+    90deg,
+    #ff9a8b 0%,
+    #ff6a88 55%,
+    #ff99ac 100%
+  );
+
+  color: var(--white);
+  transition: 400ms all cubic-bezier(0.4, -0.23, 0.235, 0.035);
+  scale: 1.1;
+
+  cursor: pointer;
+}
+.btn-2:hover {
+  background-color: #fa8bff;
+  background-image: linear-gradient(
+    45deg,
+    #a300ab 0%,
+    #2bd2ff 52%,
+    #000000 90%
+  );
+
+  color: var(--white);
+  transition: 400ms all cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  scale: 1.1;
+
+  cursor: pointer;
+}
+/*--------------------------------------responsive-------------------------------------------------*/
+@media (max-width: 850px) {
+  .section-1 {
+    display: none;
+  }
+  .main-grid-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .arrow-img {
+    display: none;
+  }
+  .section-2-main-img {
+    width: 207px;
+    height: auto;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    top: -20px;
+    bottom: 0;
+  }
+  .section-2::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 226px;
+    height: 226px; /* Adjust the size of the circle as needed */
+    background-color: var(
+      --primary
+    ); /* Adjust the background color of the circle */
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+@media (max-width: 490px) {
+  .main-grid-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+}

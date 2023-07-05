@@ -1,0 +1,98 @@
+/*----------------------------------courses-section-2-----------------------------------------------*/
+.courses-h1 {
+  font-size: 7rem;
+}
+.EDITION-2022-2 {
+  font-size: 3rem;
+  letter-spacing: 4px;
+}
+.edition::before {
+  content: ".";
+  font-size: 9rem;
+  position: absolute;
+  top: -72px;
+  left: -24px;
+}
+.edition {
+  position: relative;
+}
+.course-boxes {
+  margin-top: 5rem;
+}
+.coures-box {
+  border: 2px solid var(--white);
+  padding: 21% 12% 15% 12%;
+  position: relative;
+}
+.floating-heading {
+  background-color: var(--white);
+  color: var(--black);
+  position: absolute;
+  padding: 0.8rem;
+  top: 0;
+  left: 0;
+}
+.h1-box {
+  letter-spacing: 1px;
+  font-size: 3rem;
+  position: relative;
+}
+.h1-box::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  border-top: 2px solid var(--primary);
+  transform: translateX(-50%);
+  left: 50%;
+  top: 45px;
+}
+.box-para {
+  margin-top: 1rem;
+  line-height: 20px;
+}
+.box-btn {
+  padding: 13px 19px;
+}
+.box-btn:hover {
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--primary);
+  transition: all 400ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.margin-r {
+  margin-left: 0.6rem;
+}
+.more-courses {
+  margin-top: 4rem;
+}
+.box-under-h1 {
+  margin-right: 4rem;
+}
+.course-boxes {
+  width: 95%;
+  margin: auto;
+}
+/*--------------------------------------RESPONSIVE-CODE--------------------------------------------*/
+@media (max-width: 812px) {
+  .main-grid-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .main-grid-boxes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .course-edition {
+    display: none;
+  }
+  .coures-box {
+    border: 2px solid var(--white);
+    padding: 21% 9% 15% 9%;
+    position: relative;
+  }
+}

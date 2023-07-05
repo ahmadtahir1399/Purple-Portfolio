@@ -1,0 +1,124 @@
+/*----------------------------------MAIN-GRID-WHY--------------------------------------------------*/
+
+.main-grid-why {
+  margin-bottom: 30rem;
+}
+.img-section {
+  position: relative;
+}
+
+.full-oval {
+  width: 93%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: -2%;
+  transform: translateX(-57%);
+}
+.img-section {
+  position: relative;
+}
+
+.section-2-main-img {
+  position: relative;
+}
+
+.img-section::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 22%;
+  width: 47%;
+  height: 117%;
+  background-color: var(--primary);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.oval-person {
+  width: 50%;
+  height: auto;
+  z-index: 2;
+  position: absolute;
+  left: 28%;
+  top: -40px;
+  /* transform: translateX(-50%); */
+}
+
+.main-heading-us {
+  /* margin-right: 7rem; */
+
+  font-size: 5rem;
+}
+
+.why-heading-detail {
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+.extra-p {
+  margin-right: 4rem;
+  /* margin-left: 0px; */
+}
+
+.why-btn {
+  margin-top: 2rem;
+  padding: 10px 19px;
+}
+
+.why-btn:hover {
+  color: var(--primary);
+  background-color: var(--white);
+  transition: all 400ms cubic-bezier(0.86, 0, 0.07, 1);
+  cursor: pointer;
+}
+.explore {
+  position: absolute;
+  left: 24px;
+  writing-mode: vertical-rl;
+  font-size: 9rem;
+  color: var(--light-black);
+}
+.sm-circle-4 {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -57%;
+  right: 294%;
+}
+.half-oval-2 {
+  right: -120px;
+  bottom: 0;
+}
+.info-2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+/*--------------------------------------RESPONSIVE-CODE--------------------------------------------*/
+@media (max-width: 800px) {
+  .img-section {
+    display: none;
+  }
+  .main-grid-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .extra-p {
+    margin-right: 0rem;
+    font-size: 1.4rem;
+    line-height: 28px;
+    letter-spacing: 3px;
+    display: block;
+  }
+  .main-grid-why {
+    text-align: center;
+  }
+  .main-heading-us {
+    font-size: 7.5rem;
+  }
+  .container-3 {
+    margin: 0rem;
+  }
+}

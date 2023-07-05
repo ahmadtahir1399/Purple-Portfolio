@@ -1,0 +1,107 @@
+/*----------------------------------------------grid-css---------------------------------------*/
+.footer-img {
+  position: relative;
+}
+.grid-css-img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: -7%;
+}
+.form-heading {
+  font-size: 5rem;
+  margin-top: 7rem;
+}
+.letter {
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+.form-para {
+  width: 60%;
+  margin-top: 1.3rem;
+  font-size: 11px;
+  line-height: 21px;
+  margin-bottom: 4rem;
+}
+.form-div {
+  margin-top: 3rem;
+}
+.name-input {
+  padding: 2% 30% 2% 5%;
+  background-color: transparent;
+  outline: 3px solid var(--primary);
+  border: none;
+  font-family: "Krub", sans-serif;
+  font-weight: 900;
+  color: var(--white);
+}
+.email-input {
+  margin-top: 4.5rem;
+}
+.name-message {
+  background-color: transparent;
+  outline: 3px solid var(--primary);
+  border: none;
+  font-family: "Krub", sans-serif;
+  font-weight: 900;
+  color: var(--white);
+  padding: 2% 30% 80px 5%;
+
+  margin-top: 4.5rem;
+}
+.submit {
+  margin-top: 6rem;
+  padding: 17px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+.submit:hover {
+  background-color: var(--white);
+  color: var(--primary);
+  cursor: pointer;
+  transition: all 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+/*--------------------------------------RESPONSIVE-CODE--------------------------------------------*/
+@media (max-width: 800px) {
+  .grid-css-img {
+    display: none;
+  }
+  .grid-css {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 420px) {
+  .form-heading {
+    font-size: 4rem;
+    margin-top: 7rem;
+  }
+  .letter {
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+}
+@media (max-width: 280px) {
+  .name-input {
+    padding: 2% 20% 2% 5%;
+    background-color: transparent;
+    outline: 3px solid var(--primary);
+    border: none;
+    font-family: "Krub", sans-serif;
+    font-weight: 900;
+    color: var(--white);
+  }
+
+  .name-message {
+    background-color: transparent;
+    outline: 3px solid var(--primary);
+    border: none;
+    font-family: "Krub", sans-serif;
+    font-weight: 900;
+    color: var(--white);
+    padding: 2% 20% 80px 5%;
+
+    margin-top: 4.5rem;
+  }
+}

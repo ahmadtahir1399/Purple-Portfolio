@@ -1,0 +1,256 @@
+:root {
+  --black: #181818;
+  --light-black: #252525;
+  --gray: #b3b3b3;
+  --light-gray: #e2e2e2;
+  --white: #ffffff;
+  --primary: #a460f9;
+}
+.start {
+  align-items: flex-start;
+}
+/*----------------------------------MAIN-GRID-ABOUT------------------------------------------------*/
+.about-h1 {
+  font-size: 5rem;
+}
+/* .section-about {
+  z-index: 100;
+} */
+.about-para {
+  width: 69%;
+  color: var(--light-gray);
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+
+.about-information {
+  width: 100%;
+}
+.about-info {
+  width: 50%;
+  position: relative;
+}
+.about-info .about-info {
+  position: relative;
+  margin-left: 1rem;
+}
+.info-2 {
+  margin-top: 4rem;
+}
+.box-btn-2 {
+  padding: 10px 19px;
+  color: var(--white);
+  margin-top: 5rem;
+}
+.section-about {
+  position: relative;
+}
+.section-about-img {
+  position: absolute;
+  right: 10%;
+  top: -40%;
+  z-index: -1;
+}
+
+.section-about-img div:before {
+  content: "";
+  position: absolute;
+  right: -13%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.section-img {
+  display: block;
+  max-width: 100%;
+  left: 14%;
+  width: 69%;
+}
+
+.half-oval {
+  top: 35%;
+  left: -59px;
+}
+.sm-circle-2 {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -40%;
+  background-color: #a460f9;
+  left: 30%;
+}
+.sm-circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  left: 9%;
+  position: absolute;
+  top: -30%;
+  background-color: #a460f9;
+}
+.sm-circle-6 {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #a460f9;
+  right: 23%;
+  top: -60%;
+}
+.about-info::before {
+  content: ".";
+  position: absolute;
+  color: #a460f9;
+  font-size: 5rem;
+  content: ".";
+  position: absolute;
+  color: #a460f9;
+  font-size: 5rem;
+  top: -323%;
+  left: -7%;
+}
+/*--------------------------------------RESPONSIVE-CODE--------------------------------------------*/
+@media (max-width: 880px) {
+  .main-grid-about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .sm-circle-6 {
+    display: none;
+  }
+  .section-about {
+    margin-top: 30rem;
+  }
+  .section-img {
+    width: 59%;
+  }
+  .about-information {
+    width: 100%;
+  }
+  .about-info {
+    width: 50%;
+    position: relative;
+  }
+
+  .section-about {
+    position: relative;
+  }
+
+  /* .section-img {
+    display: block;
+    max-width: 100%;
+    left: 14%;
+    position: absolute;
+    width: 69%;
+  } */
+  .section-about-img div:before {
+    content: "";
+    position: absolute;
+    right: -13%;
+    top: 20%;
+    transform: translateX(-60%);
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    z-index: -1;
+  }
+  .half-oval {
+    display: none;
+  }
+  .section-about-img {
+    /* margin-top: 30rem; */
+    top: -15%;
+    left: 17%;
+  }
+  .sm-circle-2 {
+    display: none;
+  }
+  .sm-circle {
+    display: none;
+  }
+  .sm-circle-6 {
+    display: none;
+  }
+  .about-info::before {
+    content: ".";
+    position: absolute;
+    color: #a460f9;
+    font-size: 5rem;
+    content: ".";
+    position: absolute;
+    color: #a460f9;
+    font-size: 5rem;
+    top: -323%;
+    left: -8%;
+  }
+}
+@media (max-width: 460px) {
+  .section-about-img div:before {
+    display: none;
+  }
+
+  .section-about-img {
+    /* margin-top: 30rem; */
+    top: -18%;
+    display: none;
+
+    left: 4%;
+  }
+  .section-about {
+    margin-top: 0rem;
+  }
+
+  .about-information {
+    width: 100%;
+  }
+  .about-info {
+    width: 100%;
+    position: relative;
+  }
+  .about-info::before {
+    display: none;
+  }
+  .about-h1 {
+    display: inline;
+    font-size: 5rem;
+  }
+  /* .section-about {
+    z-index: 100;
+  } */
+  .about-para {
+    width: 69%;
+    color: var(--light-gray);
+    margin-top: 3%;
+    margin-bottom: 10%;
+  }
+
+  .main-grid-about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .about-info::before {
+    content: "";
+    position: absolute;
+    color: #a460f9;
+    font-size: 5rem;
+    content: ".";
+    position: absolute;
+    color: #a460f9;
+    font-size: 5rem;
+    top: -323%;
+    left: -7%;
+    display: none;
+  }
+}
+@media (max-width: 570px) {
+}
