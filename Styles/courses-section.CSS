@@ -2,6 +2,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.waleed {
+  color: red;
+}
 /*----------------------------------courses-section------------------------------------------------*/
 .courses-section {
   margin-top: 20px;
