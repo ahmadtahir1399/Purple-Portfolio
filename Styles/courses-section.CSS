@@ -2,9 +2,13 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.waleed {
-  color: red;
+:root {
+  --logo-delay: 200ms;
+  --course-section: calc(var(--logo-delay) + 2.5s);
+  --course-section-heading: calc(var(--logo-delay) + 2.6s);
+  --course-section-heading-2: calc(var(--logo-delay) + 2.7);
 }
+
 /*----------------------------------courses-section------------------------------------------------*/
 .courses-section {
   margin-top: 20px;
@@ -81,4 +85,34 @@
   .course-edition {
     display: none;
   }
+}
+/*--------------------------------------ANIMATIONS--------------------------------------------*/
+.courses-section {
+  animation-name: drop;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  transform: translateY(-30px);
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--course-section));
+}
+
+.course-1-heading,
+.course-2-heading {
+  animation-name: drop;
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  transform: translateY(-30px);
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--course-section-heading));
+}
+.course-heading-2 {
+  animation-name: drop;
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  transform: translateY(-30px);
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--course-section-heading-2));
 }

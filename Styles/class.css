@@ -11,13 +11,16 @@
   --light-gray: #e2e2e2;
   --white: #ffffff;
   --primary: #a460f9;
-  overflow-x: hidden;
 }
-
+:root {
+  --logo-delay: 400ms;
+  --nav-lis-delay: calc(var(var(--logo-delay)) + 2);
+}
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   position: relative;
+  overflow-x: hidden;
 }
 
 body {

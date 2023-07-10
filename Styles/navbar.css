@@ -6,6 +6,15 @@
   --white: #ffffff;
   --primary: #a460f9;
 }
+:root {
+  --logo-delay: 200ms;
+  --nav-lis-delay: calc(var(--logo-delay) + 100ms);
+  --difference-lis: calc(var(--logo-delay) + 100ms);
+  --btn-delay: calc(var(--logo-delay) + 2.1s);
+  --ham-delay: calc(var(--logo-delay));
+  --transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 html.hamburger-open {
   overflow: hidden;
 }
@@ -228,4 +237,68 @@ html.hamburger-open .hamburger .line2 {
   html.hamburger-open .nav-res {
     left: 0%;
   }
+}
+/*--------------------------------------ANIMATIONS--------------------------------------------*/
+.nav-links li {
+  animation-name: drop;
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transform: translateY(-30px);
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+@keyframes drop {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.nav-links li:nth-child(1) {
+  animation-delay: calc(var(--nav-lis-delay) + calc(var(--difference-lis) * 0));
+}
+.nav-links li:nth-child(2) {
+  animation-delay: calc(var(--nav-lis-delay) + calc(var(--difference-lis) * 1));
+}
+.nav-links li:nth-child(3) {
+  animation-delay: calc(var(--nav-lis-delay) + calc(var(--difference-lis) * 2));
+}
+.nav-links li:nth-child(4) {
+  animation-delay: calc(var(--nav-lis-delay) + calc(var(--difference-lis) * 3));
+}
+.nav-links li:nth-child(5) {
+  animation-delay: calc(var(--nav-lis-delay) + calc(var(--difference-lis) * 4));
+}
+.nav-bar .nav-links li:nth-child(6) {
+  animation-delay: calc(var(--nav-lis-delay) + calc(var(--difference-lis) * 5));
+}
+.your-logo {
+  animation-name: drop;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  transform: translateY(-30px);
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: var(--logo-delay);
+}
+.nav-btn {
+  animation-name: drop;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  transform: translateY(-30px);
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: var(--btn-delay);
+}
+.hamburger {
+  animation-name: drop;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  transform: translateY(-30px);
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: var(--ham-delay);
 }

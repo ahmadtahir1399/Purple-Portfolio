@@ -1,5 +1,9 @@
 /*----------------------------------main-oval------------------------------------------------------*/
 .main-oval {
+  :root {
+    --logo-delay: 200ms;
+    --main-oval: calc(var(--logo-delay) + 2.7);
+  }
   margin-bottom: 10rem;
 }
 .oval-heading::after {
@@ -96,5 +100,24 @@
   .section-img-text {
     position: relative;
     top: -10%;
+  }
+}
+/*-------------------------------animations--------------------------------------------------------*/
+.main-oval {
+  animation-name: slide;
+  animation-duration: 900ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  animation-iteration-count: inherit;
+  animation-delay: 2.9ms;
+}
+@keyframes slide {
+  from {
+    transform: translateX(-90px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
   }
 }

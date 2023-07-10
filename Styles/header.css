@@ -1,3 +1,9 @@
+:root {
+  --logo-delay: 300ms;
+  --section-1-delay: calc(var(--logo-delay) + 2.3s);
+  --section-2-delay: calc(var(--logo-delay) + 2.5s);
+  --section-3-delay: calc(var(--logo-delay) + 2.6s);
+}
 /*--------------------------------------ALL-HEADER-SECTION-----------------------------------------*/
 /*----------------------------------------SECTION-1------------------------------------------------*/
 
@@ -87,8 +93,8 @@
 .arrow-img-2 {
   position: absolute;
 
-  top: 50px;
-  left: -23px;
+  top: 40px;
+  left: -80px;
 }
 /*----------------------------------------SECTION-3------------------------------------------------*/
 .main-oval {
@@ -208,4 +214,32 @@
     justify-content: center;
     align-items: center;
   }
+}
+/*--------------------------------------ANIMATIONS--------------------------------------------*/
+.section-1 {
+  animation-name: drop;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  transform: translateY(-30px);
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--section-1-delay));
+}
+.section-2 {
+  animation-name: drop;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  transform: translateY(-30px);
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--section-2-delay));
+}
+.section-3 {
+  animation-name: drop;
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.86, 0.55, 0.07, 1);
+  transform: translateY(-30px);
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--section-3-delay));
 }
